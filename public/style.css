@@ -41,17 +41,26 @@ width: 100%;
 
 fieldset {
     margin-top: var(--space-lg);
+    border-color: var(--border);
 }
 
 legend {
     font-size: var(--font-lg);
-    font-weight: 600;
     padding-inline: var(--space-md);
+    font-weight: 300;
     text-decoration: underline;
 }
 
 label {
     font-size: var(--font-lg);
+}
+
+input[type="radio"]:hover, input[type="checkbox"]:hover, label:hover {
+    cursor: pointer
+}
+
+input[type="radio"]:checked:hover, input[type="radio"]:checked + label:hover {
+    cursor: default;
 }
 
 #main {
@@ -83,7 +92,8 @@ label {
 .description-title {
     font-size: var(--font-2xl);
     font-weight: 600;
-    margin-bottom: var(--space-xl);
+    margin-block: var(--space-xl);
+    margin-inline: var(--space-lg);
     text-decoration: underline;
 }
 
